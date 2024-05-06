@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ashley's Portfolio Home</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/x-icon" href="images/logo.jpg">
+<link rel ="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-bar" id="myNavbar">
+  <div class="w3-bar-item">
+    <img src="images/logo.jpg" alt="Logo" style="height: 40px;">
+  </div>
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="#home" class="w3-bar-item w3-button">HOME</a>
+  <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+  <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+    <i class="fa fa-search"></i>
+  </a>
+</div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<section>
+  <h2>Ashley's Portfolio</h2>
+  <div class="star star1"></div>
+  <div class="star star2"></div>
+  <div class="star star3"></div>
+  <div class="star star4"></div>
+  <div class="star star5"></div>
+  <div class="star star6"></div>
+  <div class="star star7"></div>
+  <div class="star star8"></div>
+  <div class="animated-button-container">
+      <a class="animated-button" href="#about">Get Started</a>
+  </div>
+</section>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>Hello there ! My name is Ashley, I am currently studying Digital Design and Development</em></p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+
+      <img src="images/myself2.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="200" height="250">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my portflio. I am Ashley, an individual who strives for the best and never gives up. I've always had a passion
+        for designing and enjoy taking photos in my free time. I enjoy programming and designing and
+        have improved over the years. I am seeking for an internship position as a UI/UX designer to
+        continue my passion for programming and designing.
+      </p>
+    </div>
+    <a href="about.html" class="w3-button w3-padding-large w3-light-grey">MORE</a>
+
+  </div>
+
+  
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Photography</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Designing</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Programming</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">ALL MY PROJECTS</h3>
+
+<div class="wrapped">
+  <div class="container">
+    <input type="radio" name="slide" id="c1" checked>
+    <label for="c1" class="card">
+      <div class="row">
+        <div class="icon">1</div>
+        <div class="description">
+          <h4><a href="AI.html">Adobe Illustrator Works</a></h4>
+        </div>
+      </div>
+    </label>
+    <input type="radio" name="slide" id="c2" checked>
+    <label for="c2" class="card">
+      <div class="row">
+        <div class="icon">2</div>
+        <div class="description">
+          <h4><a href="XD.html">Adobe XD Works</a></h4>
+        </div>
+      </div>
+    </label>
+    <input type="radio" name="slide" id="c3" checked>
+    <label for="c3" class="card">
+      <div class="row">
+        <div class="icon">3</div>
+        <div class="description">
+          <h4><a href="website.html">HTML Websites</a></h4>
+        </div>
+      </div>
+    </label>
+    <input type="radio" name="slide" id="c4" checked>
+    <label for="c4" class="card">
+      <div class="row">
+        <div class="icon">4</div>
+        <div class="description">
+          <h4><a href="photo.html">Photography</a></h4>
+        </div>
+      </div>
+    </label>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="images/duck.gif" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Singapore<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +65 8344 3422<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: ashleyfaithlsj@gmail.com<br>
+      </div>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#myNavbar" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/profile.php?id=100005041515704" class="fa fa-facebook-official w3-hover-opacity"></a>
+    <a href="https://www.instagram.com/ashhhlolol/" class="fa fa-instagram w3-hover-opacity"></a>
+    <a href="https://www.pinterest.com/ashleyfaithlsj/" class="fa fa-pinterest-p w3-hover-opacity"></a>
+    <a href="https://www.linkedin.com/in/ashley-faith-7a70b8239/" class="fa fa-linkedin w3-hover-opacity"></a>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
